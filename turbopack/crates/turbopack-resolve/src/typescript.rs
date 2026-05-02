@@ -228,10 +228,10 @@ impl ValueDefault for TsConfigResolveOptions {
 #[turbo_tasks::function]
 async fn try_join_base_url(
     source: ResolvedVc<Box<dyn Source>>,
-    base_url: RcStr,
+    base_url: &RcStr,
 ) -> Result<Vc<FileSystemPathOption>> {
     Ok(Vc::cell(
-        source.ident().path().await?.parent().try_join(&base_url),
+        source.ident().path().await?.parent().try_join(base_url),
     ))
 }
 

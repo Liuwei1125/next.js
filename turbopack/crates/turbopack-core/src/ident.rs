@@ -193,9 +193,9 @@ impl AssetIdent {
     }
 
     #[turbo_tasks::function]
-    pub async fn rename_as(&self, pattern: RcStr) -> Result<Vc<Self>> {
+    pub async fn rename_as(&self, pattern: &RcStr) -> Result<Vc<Self>> {
         let mut this = self.clone();
-        this.rename_as_ref(&pattern).await?;
+        this.rename_as_ref(pattern).await?;
         Ok(Self::new(this))
     }
 
