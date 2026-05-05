@@ -1181,5 +1181,11 @@
   "1180": "Cookies can only be modified in a Server Action or Route Handler. Read more: https://nextjs.org/docs/app/api-reference/functions/cookies#options",
   "1181": "createCombinedPayloadAtDepth must run inside a WorkStore",
   "1182": "anySegmentNeedsInstantValidation must run inside a WorkStore",
-  "1183": "%scacheScopedToWorkStore callee must run inside a WorkStore"
+  "1183": "%scacheScopedToWorkStore callee must run inside a WorkStore",
+  "1184": "Route \"%s\" accessed cookie \"%s\" which is not defined in the \\`unstable_samples\\` of \\`unstable_instant\\`. Add it to the sample's \\`cookies\\` array, or \\`{ name: \"%s\", value: null }\\` if it should be absent.",
+  "1185": "Route \"%s\" accessed searchParam \"%s\" which is not defined in the \\`unstable_samples\\` of \\`unstable_instant\\`. Add it to the sample's \\`searchParams\\` object, or \\`{ \"%s\": null }\\` if it should be absent.",
+  "1186": "Route \"%s\" accessed header \"%s\" which is not defined in the \\`unstable_samples\\` of \\`unstable_instant\\`. Add it to the sample's \\`headers\\` array, or \\`[\"%s\", null]\\` if it should be absent.",
+  "1187": "Route \"%s\" accessed param \"%s\" which is not defined in the \\`unstable_samples\\` of \\`unstable_instant\\`. Add it to the sample's \\`params\\` object.",
+  "1188": "Route \"%s\" called %s but param%s %s %s not defined in the \\`unstable_samples\\` of \\`unstable_instant\\`. %s requires all route params to be provided.",
+  "1189": "Route \"%s\" accessed root param \"%s\" which is not defined in the \\`unstable_samples\\` of \\`unstable_instant\\`. Add it to the sample's \\`params\\` object."
 }
